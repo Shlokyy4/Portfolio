@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Iceland&family=Sacramento&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Electrolize&family=Iceland&family=Sacramento&family=Silkscreen:wght@400;700&display=swap');
+
+
+.electrolize-regular {
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.doto-uniquifier {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "ROND" 0;
+}
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1rem, 4vw, 4rem); /* Responsive font size */
+    font-optical-sizing: auto;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+
+/* Main container that holds both image and content */
+.main-container {
+    padding: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    background-color: #201c24;
+}
+
+/* Image styling */
+.main-container .image {
+    width: 30vw; /* Makes the circle responsive with a maximum of 500px */
+    height: 30vw; /* Keeps the aspect ratio square */
+    max-width: 400px; /* Prevents it from growing beyond 500px */
+    max-height: 400px; /* Prevents height from growing beyond 500px */
+    margin-bottom: 10px; /* Adds space between the image and the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hides parts of the image outside the circle */
+    border-radius: 50%; /* Ensures the container is a perfect circle */
+}
+
+/* Ensures the image fits the circle properly */
+.main-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintains aspect ratio while filling the circle */
+}
+
+/* Content styling */
+.main-container .content {
+    color: white;
+    width: 50%; /* Adjusts content width */
+    min-height: 100px;
+    max-width: 600px; /* Prevents content from stretching too wide */
+    padding: 20px; /* Adds space around the text */
+    text-align: center; /* Centers the text */
+}
+
+.content h1 {
+    font-family: "Electrolize", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 3vw, 3rem); /* Responsive font size */
+}
+
+.content h1 span {
+    font-family: "Silkscreen", sans-serif;
+    color: #14f8a8;
+}
+
+.content p {
+    font-family: "Electrolize", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Responsive paragraph font size */
+    margin-top: 20px; /* Adds space above the paragraph */
+}
+
+/* New paragraph container styling */
+.paragraph-container {
+    background-color: #201c24; /* Same background color as .main-container */
+    padding: 50px 20px; /* Add padding to maintain spacing */
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+}
+
+/* About Me Card Styling */
+.about-me-card {
+    background-color: #201c24; /* Same as background */
+    padding: 40px 20px;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    width: 100%;
+    max-width: 70%;
+    text-align: center;
+}
+
+.about-me-card h2 {
+    font-family: "Silkscreen", sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 20px;
+    color: #14f8a8;
+}
+
+.about-me-card p {
+    font-family: "Electrolize", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-top: 20px;
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 884px) {
+    .main-container {
+        flex-direction: column; /* Stack image and content vertically */
+        align-items: center; /* Center them horizontally */
+        padding: 50px 20px; /* Reduce padding on mobile */
+    }
+
+    .main-container .image {
+        width: 70vw; /* Adjust image width on smaller screens */
+        height: 70vw; /* Maintain square aspect ratio */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .main-container .content {
+        width: 80%; /* Adjust content width */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .content h1 {
+        font-family: "Electrolize", sans-serif;
+        font-size: clamp(1.2rem, 4vw, 2.5rem); /* Adjust font size for mobile */
+    }
+
+    .content p {
+        font-family: "Electrolize", sans-serif;
+        font-size: clamp(1rem, 3vw, 1.1rem); /* Adjust paragraph font size */
+    }
+
+    .about-me-card {
+        width: 90%; /* Adjust card width on mobile */
+        margin-top: 20px; /* Add space above card */
+    }
+
+    .about-me-card h2 {
+        font-family: "Silkscreen", sans-serif;
+        font-size: clamp(1.2rem, 4vw, 2.2rem); /* Adjust heading size */
+    }
+
+    .about-me-card p {
+        font-family: "Electrolize", sans-serif;
+        font-size: clamp(1rem, 3vw, 1.1rem); /* Adjust paragraph font size */
+    }
+}
