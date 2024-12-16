@@ -1,0 +1,118 @@
+
+#certificates {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 1rem;
+    background-color: #201c24; 
+    overflow-x: none;
+}
+
+
+.certificatesTitle {
+    padding-top: 50px;
+    font-family: "Silkscreen", sans-serif;
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: #f2f2f2;
+}
+
+.greenAccent {
+    color: #14f8a8; 
+}
+
+
+.certificatesDesc {
+    font-family: "Electrolize", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 45rem;
+    color: #c7c7c7;
+    margin-bottom: 2rem;
+}
+
+.clickPrompt {
+    font-size: 0.85rem;
+    color: #14f8a8;
+}
+
+
+.certificatesList {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.certificateItem {
+    padding: 1rem 0;
+    border-bottom: 1px solid #5c5464;
+    transition: color 0.3s ease, background 0.3s ease;
+    text-align: left;
+    width: 100%;
+    text-decoration: none; 
+    color: #f2f2f2;
+    position: relative; 
+}
+
+.certificateItem h3 {
+    font-family: "Silkscreen", sans-serif;
+    font-size: 1.2rem;
+    color: #f2f2f2;
+    margin-bottom: 0.3rem;
+}
+
+.certificateItem p {
+    font-family: "Electrolize", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #c7c7c7;
+}
+
+
+.certificateItem:hover {
+    color: #14f8a8;
+    background: rgba(20, 248, 168, 0.1); /* Subtle hover background */
+    cursor: pointer;
+}
+
+.certificateItem:hover .hoverText {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.hoverText {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+    color: #14f8a8;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .certificatesTitle {
+        font-size: 2.5rem;
+    }
+
+    .certificatesDesc {
+        font-size: 0.9rem;
+    }
+
+    .certificatesList {
+        padding: 0 1rem;
+    }
+}

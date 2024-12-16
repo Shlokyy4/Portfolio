@@ -1,0 +1,105 @@
+
+#contact {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #201c24; 
+    overflow-x: none;
+}
+
+.contactTitle {
+    font-family: "Silkscreen", sans-serif;
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: #f2f2f2;
+}
+
+.greenAccent {
+    color: #14f8a8;
+}
+
+.contactDesc {
+    font-family: "Electrolize", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #c7c7c7;
+    margin-bottom: 2rem;
+}
+
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-family: "Electrolize", sans-serif;
+    font-size: 1rem;
+    color: #201c24;
+    outline: none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+    color: #888;
+}
+
+.contactForm button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #14f8a8;
+    border: none;
+    border-radius: 5px;
+    color: #201c24;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contactForm button:hover {
+    background-color: #12d396;
+    transform: scale(1.05);
+}
+
+
+.statusMessage {
+    font-family: "Electrolize", sans-serif;
+    font-size: 0.9rem;
+    color: #14f8a8;
+    margin-top: 1rem;
+}
+.socialLinks {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .socialLink {
+    color: #14f8a8;
+    transition: transform 0.2s ease, color 0.3s ease;
+  }
+  
+  .socialLink:hover {
+    transform: scale(1.1); 
+    color: #12d396; 
+  }
+  
+  .socialLink:focus {
+    outline: none;
+  }
