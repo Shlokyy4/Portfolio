@@ -6,6 +6,7 @@ import Certificates from './Components/Certi/Certificates';
 import Contact from './Components/Cont/Contact';
 import Footer from './Components/Foot/Footer';
 import './App.css'
+import DockNav from './Components/Dock/DockNav';
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
     <Certificates />
     <Contact />
     <Footer />
+    <button className="scrollTop" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>↑</button>
+    <DockNav />
     </div>
   );
 };

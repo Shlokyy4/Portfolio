@@ -5,6 +5,7 @@
     background-color: #201c24; 
     text-align: center;
     overflow-x: none;
+    border-top: 1px solid #2e2e2e;
 }
 
 .footerText {

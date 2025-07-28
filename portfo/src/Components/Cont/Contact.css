@@ -54,6 +54,13 @@
     outline: none;
 }
 
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border: 2px solid #14f8a8;
+  outline: none;
+}
+
+
 .contactForm input::placeholder,
 .contactForm textarea::placeholder {
     color: #888;

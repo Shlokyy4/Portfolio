@@ -1,45 +1,27 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Iceland&display=swap');
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
 
 .navbar {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: #201c24;
-  padding: 0px 45%;
-  padding-top: 30px;
+  padding: 2rem 1rem;
 }
 
 .text-accent {
-  color: #14f8a8; 
+  color: #14f8a8;
 }
 
-
 .iceland-regular {
-    font-size: 3rem;
+  font-size: 3rem;
   font-family: "Iceland", sans-serif;
   font-weight: 400;
-  font-style: normal;
   color: white;
 }
 
-
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; 
-    padding: 15px 5%; 
+    padding: 1.5rem 5%;
   }
 }

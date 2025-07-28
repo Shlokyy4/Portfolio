@@ -4,12 +4,9 @@ import './TOP.css';
 const TOP = () => {
   return (
     <div className='navbar'>
-      
-        <h1 className=' iceland-regular'>
-          Shlokyy 
-          <span className='text-accent'>.</span>
-        </h1>
-      
+      <h1 className='iceland-regular'>
+        Shlokyy<span className='text-accent'>.</span>
+      </h1>
     </div>
   );
 };
