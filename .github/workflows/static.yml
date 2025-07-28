@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -22,6 +21,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -33,14 +33,16 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./portfo
 
       - name: Build the React app
         run: npm run build
+        working-directory: ./portfo
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'build'
+          path: 'portfo/build'
 
       - name: Deploy to GitHub Pages
         id: deployment
